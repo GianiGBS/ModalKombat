@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2A0448F271574330038276A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0448E271574330038276A /* main.swift */; };
+		C24F07F8273928C70037365F /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F07F7273928C70037365F /* Globals.swift */; };
+		C2FF5088271D86C200E1CF7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF5087271D86C200E1CF7B /* main.swift */; };
+		C2FF50A8271F0C7D00E1CF7B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF50A7271F0C7C00E1CF7B /* Player.swift */; };
+		C2FF50AE271F0CB100E1CF7B /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF50AB271F0CB100E1CF7B /* Chest.swift */; };
+		C2FF50AF271F0CB100E1CF7B /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF50AC271F0CB100E1CF7B /* Weapon.swift */; };
+		C2FF50B2271F1CA200E1CF7B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF50B1271F1CA200E1CF7B /* Character.swift */; };
+		C2FF50B42721FD4000E1CF7B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF50B32721FD3F00E1CF7B /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C24F07F7273928C70037365F /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		C2A0448B271574330038276A /* ModalKombat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ModalKombat; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2A0448E271574330038276A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C2FF5087271D86C200E1CF7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ModalKombat/main.swift; sourceTree = SOURCE_ROOT; };
+		C2FF50A7271F0C7C00E1CF7B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C2FF50AB271F0CB100E1CF7B /* Chest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
+		C2FF50AC271F0CB100E1CF7B /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		C2FF50B1271F1CA200E1CF7B /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C2FF50B32721FD3F00E1CF7B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,23 @@
 		C2A0448D271574330038276A /* ModalKombat */ = {
 			isa = PBXGroup;
 			children = (
-				C2A0448E271574330038276A /* main.swift */,
+				C2FF5087271D86C200E1CF7B /* main.swift */,
+				C24F07F7273928C70037365F /* Globals.swift */,
+				C2FF509B271EB9A300E1CF7B /* Models */,
 			);
 			path = ModalKombat;
+			sourceTree = "<group>";
+		};
+		C2FF509B271EB9A300E1CF7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2FF50B32721FD3F00E1CF7B /* Game.swift */,
+				C2FF50A7271F0C7C00E1CF7B /* Player.swift */,
+				C2FF50B1271F1CA200E1CF7B /* Character.swift */,
+				C2FF50AC271F0CB100E1CF7B /* Weapon.swift */,
+				C2FF50AB271F0CB100E1CF7B /* Chest.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,10 +116,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					C2A0448A271574330038276A = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -120,7 +147,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2A0448F271574330038276A /* main.swift in Sources */,
+				C2FF50AF271F0CB100E1CF7B /* Weapon.swift in Sources */,
+				C2FF50B42721FD4000E1CF7B /* Game.swift in Sources */,
+				C2FF50AE271F0CB100E1CF7B /* Chest.swift in Sources */,
+				C24F07F8273928C70037365F /* Globals.swift in Sources */,
+				C2FF50B2271F1CA200E1CF7B /* Character.swift in Sources */,
+				C2FF50A8271F0C7D00E1CF7B /* Player.swift in Sources */,
+				C2FF5088271D86C200E1CF7B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +278,16 @@
 		C2A04493271574330038276A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,7 +295,14 @@
 		C2A04494271574330038276A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
