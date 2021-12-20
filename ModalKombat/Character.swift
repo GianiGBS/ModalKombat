@@ -6,7 +6,7 @@
 //
 
 
-public class Character{
+class Character{
     
     // MARK: Properties
     var name : String 

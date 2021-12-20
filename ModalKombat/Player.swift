@@ -6,7 +6,7 @@
 //
 
 
-public class Player {
+class Player {
     
     // MARK: Properties
     var id : Int
@@ -49,7 +49,7 @@ public class Player {
         }
         // We get the user's response
         if let choice = readLine(), let indexChoice = Int(choice) {
-            if indexChoice > 0 && indexChoice < 6 { /*(le tableau characters ne contient pas le character)*/
+            if indexChoice > 0 && indexChoice < 6 {
                 teamate = charactersList[indexChoice - 1]
                 characters.append(charactersList[indexChoice - 1])
                 charactersList.remove(at: (indexChoice - 1))
@@ -66,76 +66,11 @@ public class Player {
             print("Désolé... Je n'ai pas bien compris ? Veuillez choisir entre 1 et 6.")
             createTeam()
         }
-        
-//            print("""
-//
-//    \(self.name), choisi maintenant \(indexCharacters) personnage(s) dans cette liste pour former une equipe :
-//    """
-//                  + "\n1. Knight"
-//                  + "\n2. Wizard"
-//                  + "\n3. Ranger"
-//                  + "\n4. Gladiator"
-//                  + "\n5. Shaman"
-//                  + "\n6. Assasin")
-//
-//            // We get the user's response
-//            if let choice = readLine() {
-//                switch choice {
-//                case "1": // Add Knight to player's Team
-//                    characters.append(charactersList[0])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un CHEVALIER à ton équipe.
-//
-//                    """)
-//                case "2": // Add Wizard to player's Team
-//                    characters.append(charactersList[1])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un MAGICIEN à ton équipe.
-//
-//                    """)
-//                case "3": // Add Ranger to player's Team
-//                    characters.append(charactersList[2])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un RODEUR à ton équipe.
-//
-//                    """)
-//                case "4": // Add Gladiator to player's Team
-//                    characters.append(charactersList[3])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un GLADIATEUR à ton équipe.
-//
-//                    """)
-//                case "5": // Add Shaman to player's Team
-//                    characters.append(charactersList[4])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un SHAMAN à ton équipe.
-//
-//                    """)
-//                case "6": // Add Assasin to player's Team
-//                    characters.append(charactersList[5])
-//                    indexCharacters -= 1
-//                    print("""
-//                          Bravo \(self.name)! Tu as ajouté un ASSASIN à ton équipe.
-//
-//                    """)
-//                default: // Wrong answer ! Try again.
-//                    print("""
-//                          Désolé... Je n'ai pas bien compris ? Veuillez choisir entre 1 et 6.
-//
-//                    """)
-//                    createTeam()
-//                }
-//            }
         }
     }
     func setTeamCharactersName() {
-        for character in characters {
-            character.setCharacterName()
+        for (index, _) in self.characters.enumerated() {
+            self.characters[index].setCharacterName()
         }
     }
     func showTeam() {

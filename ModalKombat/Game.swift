@@ -6,7 +6,7 @@
 //
 
 
-public class Game {
+ class Game {
     
     // MARK: Properties
     static var players = [Player]()
@@ -71,25 +71,26 @@ public class Game {
         }
         winCheck()
     }
-    private func winCheck(){
-      if player1.teamIsAlive() == false {
-          print("""
+     private func winCheck(){
+         if player1.teamIsAlive() == false {
+             print("""
           
                 🎊🎉____Félicitation !____🎉🎊
                     \(player2.name) GAGNE.
+                🎊🎉👏👏👏👏👏👏👏👏👏👏👏👏👏👏🎉🎊
           """)
-          showStat()
-      }
-      else if player2.teamIsAlive() == false {
-          print("""
+             showStat()
+         } else if player2.teamIsAlive() == false {
+             print("""
           
                 🎊🎉____Félicitation !____🎉🎊
                     \(player1.name) GAGNE.
             🎊🎉👏👏👏👏👏👏👏👏👏👏👏👏👏👏🎉🎊
           """)
-          showStat()
-      }
-      }
+             showStat()
+         }
+     }
+     
     private func showStat(){
             print("""
 
@@ -100,10 +101,10 @@ Nombre de tour : \(turnNumber)
 Score : Player 1 [\(player1.score) - \(player2.score)] Player 2
 
 Récapitulatif des équipes :
-\(player1.showTeam())
-
-\(player2.showTeam())
 """)
+        player1.showTeam()
+
+        player2.showTeam()
     }
 }
 
