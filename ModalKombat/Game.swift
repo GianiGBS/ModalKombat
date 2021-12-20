@@ -6,7 +6,7 @@
 //
 
 
- class Game {
+class Game {
     
     // MARK: Properties
     static var players = [Player]()
