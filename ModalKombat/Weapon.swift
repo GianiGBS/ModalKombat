@@ -6,7 +6,7 @@
 //
 
 
-public class Weapon {
+class Weapon {
     // MARK: Internal properties
     var name: String
     var damage: Int

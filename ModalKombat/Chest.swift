@@ -6,7 +6,7 @@
 //
 
 
-public class Chest {
+class Chest {
     
     // TODO: Properties
     var randomPlayer: Int
