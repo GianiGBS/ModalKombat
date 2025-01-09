@@ -1,8 +1,9 @@
+
 # **ModalKombat**
 
   
 
-**ModalKombat** est un jeu de combat interactif basé sur la console, développé en Swift, où deux joueurs s’affrontent à travers leurs équipes de personnages. Ce projet met en avant les concepts fondamentaux de la programmation orientée objet (POO) dans Swift.
+**ModalKombat** est un jeu de combat interactif basé sur la console, développé en Swift, où deux joueurs s’affrontent à travers leurs équipes de personnages. Ce projet met en avant les concepts fondamentaux de la programmation orientée objet (POO) dans Swift.
 
   
 
@@ -14,7 +15,7 @@ ModalKombat est un jeu textuel dans lequel :
 
   
 
-• Chaque joueur crée une équipe de **3 personnages** choisis parmi différents types (Combattant, Mage, Colosse, Nain).
+• Chaque joueur crée une équipe de **3 personnages** choisis parmi différents types (Combattant, Mage, Colosse, Nain).
 
 • Les joueurs s’affrontent à tour de rôle en attaquant ou en soignant des personnages.
 
@@ -34,13 +35,13 @@ Le jeu se termine lorsque tous les personnages d’une équipe sont vaincus.
 
 1\. Chaque joueur choisit 3 personnages parmi les types suivants :
 
-• **Combattant** : Guerrier équilibré avec une attaque standard.
+• **Combattant** : Guerrier équilibré avec une attaque standard.
 
-• **Mage** : Capable de soigner les membres de son équipe.
+• **Mage** : Capable de soigner les membres de son équipe.
 
-• **Colosse** : Résistant mais inflige peu de dégâts.
+• **Colosse** : Résistant mais inflige peu de dégâts.
 
-• **Nain** : Fragile mais inflige de lourds dégâts.
+• **Nain** : Fragile mais inflige de lourds dégâts.
 
 2\. Chaque personnage doit être nommé avec un nom unique.
 
@@ -70,13 +71,13 @@ Le jeu se termine lorsque tous les personnages d’une équipe sont vaincus.
 
 ## **🚀 Fonctionnalités principales**
 
-• **Combat dynamique** : Sélection et actions des personnages à tour de rôle.
+• **Combat dynamique** : Sélection et actions des personnages à tour de rôle.
 
-• **Apparition aléatoire de coffres** : Offre des armes ou des bonus aléatoires.
+• **Apparition aléatoire de coffres** : Offre des armes ou des bonus aléatoires.
 
-• **Statistiques du jeu** : Résumé des performances (nombre de tours, actions effectuées, etc.).
+• **Statistiques du jeu** : Résumé des performances (nombre de tours, actions effectuées, etc.).
 
-• **Extension personnalisée** : Bonus créatif ajouté (ex. nouveau type de personnage ou effet spécial).
+• **Extension personnalisée** : Bonus créatif ajouté (ex. nouveau type de personnage ou effet spécial).
 
   
 
@@ -86,43 +87,42 @@ Le jeu se termine lorsque tous les personnages d’une équipe sont vaincus.
 
 **Classes principales**
 
-1\. **Game** : Gère le déroulement global de la partie (tours, victoire, etc.).
+1\. **Game** : Gère le déroulement global de la partie (tours, victoire, etc.).
 
-2\. **Player** : Représente un joueur et son équipe.
+2\. **Player** : Représente un joueur et son équipe.
 
-3\. **Character** : Représente un personnage avec des attributs comme le nom, la santé, et l’arme.
+3\. **Character** : Représente un personnage avec des attributs comme le nom, la santé, et l’arme.
 
-4\. **Weapon** : Définit les armes et leurs effets (dégâts ou soins).
+4\. **Weapon** : Définit les armes et leurs effets (dégâts ou soins).
 
-5\. **Chest** : Gère l’apparition aléatoire des coffres et leur contenu.
+5\. **Chest** : Gère l’apparition aléatoire des coffres et leur contenu.
 
   
 
 **Diagrammes**
 
-• **Diagramme de classe** : Décrit les relations entre les objets du jeu [available soon] .
+• **Diagramme de classe** : Décrit les relations entre les objets du jeu [upload soon] .
 
-• **Diagramme de séquence** : Illustre le flux d’interactions pendant une partie [available soon] .
+• **Diagramme de séquence** : Illustre le flux d’interactions pendant une partie .
 
   
 
 ## **🔧 Installation**
 
 1\. Clonez le dépôt :
-
-  
-
+```bash
 git clone https://github.com/GianiGBS/ModalKombat.git
+```
 
+```bash
 cd ModalKombat
+```
 
   
 
   
 
-  
-
-2\. Ouvrez le fichier .xcodeproj avec Xcode.
+2\. Ouvrez le fichier .xcodeproj avec Xcode.
 
 3\. Lancez le projet dans la console en sélectionnant un simulateur macOS.
 
@@ -130,9 +130,9 @@ cd ModalKombat
 
 ## **🛠️ Technologies utilisées**
 
-• **Swift** : Langage principal.
+• **Swift** : Langage principal.
 
-• **Xcode** : IDE utilisé pour le développement.
+• **Xcode** : IDE utilisé pour le développement.
 
   
 
@@ -148,14 +148,14 @@ Les contributions sont les bienvenues ! Ouvrez une issue ou une pull request pou
 
   
 
-Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d’informations.
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d’informations.
 
   
 
 ## **🎮 Exemple d’exécution**
 
   
-
+```bash
 Welcome to ModalKombat!
 
 Player 1, please name your characters:
@@ -188,7 +188,7 @@ A chest appears! Gimli equips a new weapon: "Battle Axe" (+20 attack).
 
 ...
 
-  
+  ```
 
 ## **📈 Statistiques finales**
 
